@@ -2,18 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <script src="main.js"></script>
+    <title>Pig Latin</title>
+    <link rel="stylesheet" href="./app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <script src="./dom.js"></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <hr/>
-    <div id="display-element"></div>
-    <form>
-      <input id="user-input" type="text">
-      <!-- How do you get this input sent to the pigLatin() function? -->
-      <button onclick="pigLatin()">Translate</button>
-    </form>  
-    <hr/>
+    <div class="container">
+      <div class="pig-latin-wrapper">
+        <div class="title-wrapper">
+          <h1>Pig Latin!</h1>
+        </div>
+        <div class="image-wrapper">
+          <img src="./piglatin.gif">
+        </div>
+      
+        <div id="display-element"></div>
+      
+        <input id="user-input" type="text" placeholder="Enter word here">
+        <!-- How do you get this input sent to the pigLatin() function? -->
+        <div class="button-wrapper">
+          <button onclick="pigLatin()">Translate</button>
+          <button onclick="clearResults()">Reset</button>
+        </div>
+      </div>
+    </div>
+  
   </body>
 </html>
